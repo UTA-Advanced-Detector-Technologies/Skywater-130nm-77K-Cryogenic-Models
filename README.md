@@ -22,7 +22,9 @@ The source and body were both held at ground for all measurements.
 ## `models` folder
 This folder contains the 77K models extracted using the cryo data. 
 
+### How to implement the 77K model into the Skywater PDK
 
+### 77K model notes
 
 The length and width model bins of available 77K CMOS models are listed in the tables below, <ins>with the sizes in microns</ins>. (Lmin is the minimum length, Lmax is the maximum length, and similar notation is for width minimum and maximum).
 
