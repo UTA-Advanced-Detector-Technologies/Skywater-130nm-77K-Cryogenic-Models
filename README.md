@@ -29,13 +29,13 @@ From Volare download the updated PDK using the following commands:
 ```bash
 pip install volare
 
-export PDK_ROOT="/home/<your_user_name>/<desired_PDK_directory>"
+export PDK_ROOT="/home/<your_username>/<desired_PDK_directory>"
 
 volare ls-remote --pdk sky130
 # Lists all available versions of the Sky130 PDK
 
 volare enable --pdk sky130 a918dc7c8e474a99b68c85eb3546b4ed91fe9e7b
-# Replace the commit hash with the version you want (for example the latest one)
+# Replace this hash with the version you want
 ```
 
 ### 77K model notes
