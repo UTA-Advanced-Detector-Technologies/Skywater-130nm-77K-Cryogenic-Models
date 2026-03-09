@@ -23,6 +23,11 @@ The source and body were both held at ground for all measurements.
 This folder contains the 77K models extracted using the cryo data. 
 
 ### How to implement the 77K model into the Skywater PDK
+From Volare download updated pdk, using following commands
+pip install volare
+export PDK_ROOT="/home/<your user name>/<desired PDK directory>"
+volare ls-remote --pdk sky130 This lists all of the version of the PDK
+volare enable --pdk sky130 a918dc7c8e474a99b68c85eb3546b4ed91fe9e7b Replace with the one you want, like the most recent one from 
 
 ### 77K model notes
 
@@ -31,7 +36,7 @@ The length and width model bins of available 77K CMOS models are listed in the t
 <img width="404" height="417" alt="Screenshot 2026-01-12 at 3 15 14 PM" src="https://github.com/user-attachments/assets/6db8de00-5c8e-46b8-b815-7b9582caff26" />
 <img width="391" height="317" alt="Screenshot 2026-01-12 at 3 15 22 PM" src="https://github.com/user-attachments/assets/b9021a34-81af-4b6f-9f4a-fe39a1d75a8e" />
 
-# Model implementation
+
 
 
 Message feb9528@mavs.uta.edu for any questions.
