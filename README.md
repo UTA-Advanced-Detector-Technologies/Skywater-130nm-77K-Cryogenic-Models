@@ -31,6 +31,7 @@ The length and width model bins of available 77K CMOS models are listed in the t
 <img width="404" height="417" alt="Screenshot 2026-01-12 at 3 15 14 PM" src="https://github.com/user-attachments/assets/6db8de00-5c8e-46b8-b815-7b9582caff26" />
 <img width="391" height="317" alt="Screenshot 2026-01-12 at 3 15 22 PM" src="https://github.com/user-attachments/assets/b9021a34-81af-4b6f-9f4a-fe39a1d75a8e" />
 
+# Model implementation
 
 
 Message feb9528@mavs.uta.edu for any questions.
