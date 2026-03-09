@@ -22,12 +22,21 @@ The source and body were both held at ground for all measurements.
 ## `models` folder
 This folder contains the 77K models extracted using the cryo data. 
 
-### How to implement the 77K model into the Skywater PDK
-From Volare download updated pdk, using following commands
+### How to implement the 77K model into the SkyWater PDK
+
+From Volare download the updated PDK using the following commands:
+
+```bash
 pip install volare
-export PDK_ROOT="/home/<your user name>/<desired PDK directory>"
-volare ls-remote --pdk sky130 This lists all of the version of the PDK
-volare enable --pdk sky130 a918dc7c8e474a99b68c85eb3546b4ed91fe9e7b Replace with the one you want, like the most recent one from 
+
+export PDK_ROOT="/home/<your_user_name>/<desired_PDK_directory>"
+
+volare ls-remote --pdk sky130
+# Lists all available versions of the Sky130 PDK
+
+volare enable --pdk sky130 a918dc7c8e474a99b68c85eb3546b4ed91fe9e7b
+# Replace the commit hash with the version you want (for example the latest one)
+```
 
 ### 77K model notes
 
