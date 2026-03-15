@@ -41,6 +41,47 @@ Place  77k both Nmost and Pmos models to
 ```bash
 /home/<your_username>/<desired_PDK_directory>/skywater-pdk/libraries/sky130_fd_pr/latest/cells/nfet_01v8_lvt/77k_models
 ```
+
+Create a new corner inside the file:
+
+```
+/home/<your_username>/<desired_PDK_directory>/skywater-pdk/libraries/sky130_fd_pr/latest/models/sky130.lib.spice
+```
+
+Include 77K Nmos and Pmos model files along with other necessary model files
+For example,
+```spice
+******** SkyWater sky130 model library ********
+
+* Typical corner (tt) at 77K
+.lib tt_77k
+
+.include "../cells/nfet_01v8_lvt/77k_models/sky130_fd_pr__nfet_01v8_lvt__tt_77k.corner.spice"
+.include "../cells/pfet_01v8_lvt/77k_models/sky130_fd_pr__pfet_01v8_lvt__tt_77k.corner.spice"
+
+.include "../cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice"
+.include "../cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice"
+
+.include "fc/res_typical__cap_typical.spice"
+.include "fc/res_typical__cap_typical__lin.spice"
+
+* Special cells
+.include "corners/tt/specialized_cells.spice"
+
+* All models
+.include "all.spice"
+
+* Corner
+.include "corners/tt/ff.spice"
+
+.endl
+```
+
+After this modification, the 77K corner can be used in simulations by calling:
+
+```spice
+.lib $PDK_ROOT/sky130A/libs.tech/ngspice/sky130.lib.spice tt_77k
+```
 ### 77K model notes
 
 The length and width model bins of available 77K CMOS models are listed in the tables below, <ins>with the sizes in microns</ins>. (Lmin is the minimum length, Lmax is the maximum length, and similar notation is for width minimum and maximum).
