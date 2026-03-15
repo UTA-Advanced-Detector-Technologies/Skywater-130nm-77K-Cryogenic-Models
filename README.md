@@ -80,7 +80,7 @@ For example,
 After this modification, the 77K corner can be used in simulations by calling:
 
 ```spice
-.lib $PDK_ROOT/sky130A/libs.tech/ngspice/sky130.lib.spice tt_77k
+.lib \"/home/<your_username>/<desired_PDK_directory>/skywater-pdk/libraries/sky130_fd_pr/latest/models/sky130.lib.spice" tt_77k
 ```
 ### 77K model notes
 
