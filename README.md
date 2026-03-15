@@ -37,7 +37,10 @@ volare ls-remote --pdk sky130
 volare enable --pdk sky130 a918dc7c8e474a99b68c85eb3546b4ed91fe9e7b
 # Replace this hash with the version you want
 ```
-
+Place  77k both Nmost and Pmos models to 
+```bash
+/home/<your_username>/<desired_PDK_directory>/skywater-pdk/libraries/sky130_fd_pr/latest/cells/nfet_01v8_lvt/77k_models
+```
 ### 77K model notes
 
 The length and width model bins of available 77K CMOS models are listed in the tables below, <ins>with the sizes in microns</ins>. (Lmin is the minimum length, Lmax is the maximum length, and similar notation is for width minimum and maximum).
