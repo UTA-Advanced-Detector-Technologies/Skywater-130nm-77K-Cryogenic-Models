@@ -1,6 +1,17 @@
 # Skywater 130nm 77K Cryogenic Models
 This repo contains the newly developed cryogenic model cards needed for easy implementation into NGSpice software and the cryogenic I-V data curves used to obtain the models.
 
+## Associated paper
+
+This repository accompanies the paper:
+
+**DC Cryogenic Modeling of Open-Source SkyWater 130 nm MOSFETs at 77 K Using BSIM4**  
+F. Beall, A. Rimal, O. Seidel, Y. Mei, A. D. McDonald, I. Parmaksiz, V. A. Chirayath, J. Asaadi, D. Braga, and J. B. R. Battat  
+arXiv:2604.21625, 2026  
+[https://arxiv.org/abs/2604.21625](https://arxiv.org/abs/2604.21625)
+
+The paper describes the 77 K DC characterization and BSIM4-based cryogenic modeling workflow used to generate the SPICE-compatible SkyWater 130 nm MOSFET models provided here.
+
 ## `cryo_data` folder
 This folder contains the 77K I-V characteristic data taken at Fermilab. Each transistor's data is separated into its own folder. The naming convention follows the format:
 **nmos_FET_len_0p15_wid_1p6**
