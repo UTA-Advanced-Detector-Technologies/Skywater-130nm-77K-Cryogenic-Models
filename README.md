@@ -5,12 +5,12 @@ This repo contains the newly developed cryogenic model cards needed for easy imp
 
 This repository accompanies the paper:
 
-**DC Cryogenic Modeling of Open-Source SkyWater 130 nm MOSFETs at 77 K Using BSIM4**  
+**DC Cryogenic Modeling of Open-Source SkyWater 130nm MOSFETs at 77 K Using BSIM4**  
 F. Beall, A. Rimal, O. Seidel, Y. Mei, A. D. McDonald, I. Parmaksiz, V. A. Chirayath, J. Asaadi, D. Braga, and J. B. R. Battat  
 arXiv:2604.21625, 2026  
 [https://arxiv.org/abs/2604.21625](https://arxiv.org/abs/2604.21625)
 
-The paper describes the 77 K DC characterization and BSIM4-based cryogenic modeling workflow used to generate the SPICE-compatible SkyWater 130 nm MOSFET models provided here.
+The paper describes the 77K DC characterization and BSIM4-based cryogenic modeling workflow used to generate the SPICE-compatible SkyWater 130nm MOSFET models provided here.
 
 ## `cryo_data` folder
 This folder contains the 77K I-V characteristic data taken at Fermilab. Each transistor's data is separated into its own folder. The naming convention follows the format:
@@ -46,9 +46,9 @@ volare ls-remote --pdk sky130
 # Lists all available versions of the Sky130 PDK
 
 volare enable --pdk sky130 a918dc7c8e474a99b68c85eb3546b4ed91fe9e7b
-# Replace this hash with the version you want
+# This version from 10/08/2024 was used for 77K PDK development
 ```
-Place  77k both Nmost and Pmos models to 
+Place  77k both nMOS and pMOS models to 
 ```bash
 /home/<your_username>/<desired_PDK_directory>/skywater-pdk/libraries/sky130_fd_pr/latest/cells/nfet_01v8_lvt/77k_models
 ```
@@ -59,7 +59,7 @@ Create a new corner inside the file:
 /home/<your_username>/<desired_PDK_directory>/skywater-pdk/libraries/sky130_fd_pr/latest/models/sky130.lib.spice
 ```
 
-Include 77K Nmos and Pmos model files along with other necessary model files
+Include 77K nMOS and pMOS model files along with other necessary model files.
 For example,
 ```spice
 ******** SkyWater sky130 model library ********
