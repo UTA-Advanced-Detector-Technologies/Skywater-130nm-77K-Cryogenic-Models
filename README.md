@@ -70,9 +70,6 @@ For example,
 .include "../cells/nfet_01v8_lvt/77k_models/sky130_fd_pr__nfet_01v8_lvt__tt_77k.corner.spice"
 .include "../cells/pfet_01v8_lvt/77k_models/sky130_fd_pr__pfet_01v8_lvt__tt_77k.corner.spice"
 
-.include "../cells/nfet_01v8_lvt/sky130_fd_pr__nfet_01v8_lvt__mismatch.corner.spice"
-.include "../cells/pfet_01v8_lvt/sky130_fd_pr__pfet_01v8_lvt__mismatch.corner.spice"
-
 .include "fc/res_typical__cap_typical.spice"
 .include "fc/res_typical__cap_typical__lin.spice"
 
