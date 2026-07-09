@@ -68,9 +68,9 @@ msky130_fd_pr__nfet_01v8_lvt d g s b sky130_fd_pr__nfet_01v8_lvt__model l = {l} 
 *.param eta0_nom = 1.40301
 *.param delta_nom = 5.33214
 .model sky130_fd_pr__nfet_01v8_lvt__model.0 nmos
-+lmin=1.4e-07
++lmin=1.5e-07
 +lmax=1.8e-07
-+wmin=9e-07
++wmin=1e-06
 +wmax=1.65e-06
 +level=54
 +tnom=-196.15
